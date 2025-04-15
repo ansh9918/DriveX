@@ -449,7 +449,7 @@
     @apply outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 h-11 w-full rounded-[8px] border-transparent bg-white !shadow-sm sm:w-[210px] ;
   }
   .sort-select-content {
-    @apply !shadow-drop-3 ;
+    @apply bg-white border-none rounded-[20px] !shadow-drop-3 ;
   }
 
   /* Thumbnail */
