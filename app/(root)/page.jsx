@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import ActionsDropdown from "@/components/ActionsDropdown";
 import { Chart } from "@/components/Chart";
 import { Separator } from "@/components/ui/separator";
 import { getFiles, getTotalSpaceUsed } from "@/lib/actions/file.actions";
 import { convertFileSize, getUsageSummary } from "@/lib/utils";
 import FormattedDateTime from "@/components/FormattedDateTime";
 import Thumbnail from "@/components/Thumbnail";
+import ActionsDropDown from "@/components/ActionsDropDown";
 
 const Dashboard = async () => {
     // Parallel requests
@@ -88,7 +88,7 @@ const Dashboard = async () => {
                                             className="caption"
                                         />
                                     </div>
-                                    <ActionsDropdown file={file} />
+                                    <ActionsDropDown file={file} />
                                 </div>
                             </Link>
                         ))}
